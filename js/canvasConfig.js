@@ -1,0 +1,10 @@
+export const canvas = document.querySelector("canvas");
+export const ctx = canvas.getContext("2d");
+
+canvas.width = innerWidth;
+canvas.height = innerHeight;
+
+window.addEventListener("resize", () => {
+  canvas.width = innerWidth;
+  canvas.height = innerHeight;
+});
